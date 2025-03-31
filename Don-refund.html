@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Processing Refund</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    #meme {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: none;
+    }
+    .processing {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      color: #000;
+      margin-top: 100px;
+    }
+    .logo {
+      height: 60px;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        document.body.innerHTML = '<img id="meme" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." alt="You got got!" />';
+        document.getElementById('meme').style.display = 'block';
+      }, 7000);
+    };
+  </script>
+</head>
+<body>
+  <div class="processing">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="logo">
+    <h2>Processing your refund...</h2>
+    <p>Please wait while we confirm your claim.</p>
+    <p><em>Do not refresh this page.</em></p>
+  </div>
+</body>
+</html>
